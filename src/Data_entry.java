@@ -47,16 +47,19 @@ public class Data_entry {
             setString3(input.next());
             String[] arr= string.split(" ");
             System.out.println(Arrays.toString(arr));
-            System.out.println("Replace with what? ");
+            System.out.print("Replace with what? ");
             setString2(input.next());
 
 
             for (int i = 0; i < arr.length; i++) {
-                if(arr[i]!=string3){
+                if(string.contains(string2)){
+                    System.out.println(string.replace(string3,string2));
+
+
+                }else {
                     System.out.println("The word"+ string3+ " is not found ");
                     break;
-                }else {
-                    System.out.println(string.replace(string3,string2));
+
 
 
                 }
