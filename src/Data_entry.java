@@ -53,12 +53,13 @@ public class Data_entry {
 
             for (int i = 0; i < arr.length; i++) {
                 if(string.contains(string2)){
-                    System.out.println(string.replace(string3,string2));
+                    System.out.println(string.replace(string2,string3));
+                    break;
 
 
                 }else {
                     System.out.println("The word"+ string3+ " is not found ");
-                    break;
+
 
 
 
